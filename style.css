@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121614;
+    color: #D8D2C4;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+body>h1 {
+    font-size: 70px;
+    letter-spacing: 7px;
+}
+
+nav ul {
+    height: 30px;
+    list-style: none;
+    display: flex;
+    background-color: #58605A;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    transform: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #c7bba3;
+    cursor: pointer;
+}
+
+.sinopse,
+.trailer,
+.elenco,
+.curiosidades,
+.contato {
+    width: 1300px;
+    justify-self: center;
+    background-color: #58605A;
+    border: 4px solid #1e2321;
+    margin: 15px;
+    padding: 15px;
+}
+
+.sinopse>p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.trailer {
+    text-align: center;
+    align-items: center;
+}
+
+.trailer iframe{
+    border: 5px solid #1e2321
+}
+.trailer>img {
+    size: 900px auto;
+    border: 5px solid #1e2321
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    background-color: #1e2321;
+    border: 1px solid #58605A;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 25px;
+}
