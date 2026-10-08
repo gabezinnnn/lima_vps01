@@ -8,6 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #121614;
+    background: linear-gradient(166deg, rgba(18, 22, 20, 1) 33%, rgba(52, 66, 55, 1) 66%);
     color: #D8D2C4;
 }
 
@@ -35,7 +36,8 @@ nav ul {
 }
 
 nav ul li {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
 }
 
 nav ul li a {
@@ -57,14 +59,26 @@ nav ul li a:hover {
     width: 1300px;
     justify-self: center;
     background-color: #58605A;
-    border: 4px solid #1e2321;
-    margin: 15px;
+    border-left: 4px solid #1e2321;
+    border-right: 4px solid #1e2321;
     padding: 15px;
+}
+
+.sinopse{
+    margin-top: 15px;
+    border-top: 4px solid #1e2321;
+    
+}
+.contato{
+    margin-bottom: 15px;
+    border-bottom: 4px solid #1e2321;
 }
 
 .sinopse>p {
     text-align: justify;
     font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .trailer {
@@ -72,12 +86,14 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.trailer iframe{
+.trailer iframe {
     border: 5px solid #1e2321
 }
-.trailer>img {
-    size: 900px auto;
-    border: 5px solid #1e2321
+
+.trailer .imagens {
+    height: 315px;
+    border: 5px solid #1e2321;
+    margin-left: 15px;
 }
 
 .cards {
@@ -107,3 +123,92 @@ nav ul li a:hover {
 .card h1 {
     font-size: 25px;
 }
+
+.curiosidades ul {
+    list-style: decimal;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.curiosidades ul li {
+    text-align: justify;
+    font-size: 20px;
+    place-self: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #252A27;
+    border: 2px solid #1e2321;
+    color: #58605A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #58605A;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+}
+
+button {
+    background-color: #304D3A;
+    color: #161917;
+    font-family: "League Gothic", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    transform: transform 0.3s ease;
+}
+
+button:hover {
+    background: #3a5745;
+    cursor: pointer;
+}
+
+textarea {
+    height: 120px;
+}
+
+footer {
+    width: 100%;
+    background-color: #121614;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #304D3A;
+    transform: transform 0.4s ease;
+}
+
+footer a:hover{
+    color: #335740;
+}
+
+footer hr{
+    height: 1px;
+}
+
+.linha{
+    margin-top: 15px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    place-self: center;
+}
+
+
+/* relative: baixo, absolute: cima */
